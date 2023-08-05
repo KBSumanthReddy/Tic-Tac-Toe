@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+    <nav>
+        <h1>Tic-Tac-Toe</h1>
+    </nav>
+    <div class="game">
+        <p>'X' starts the Game</p>
+        <div class="container">
+            <div class="box b-l b-t" onclick="textchange(0);"><span class="boxtext"></span></div>
+            <div class="box b-t" onclick="textchange(1);">    <span class="boxtext"></span></div>
+            <div class="box b-r b-t" onclick="textchange(2);"><span class="boxtext"></span></div>
+            <div class="box b-l" onclick="textchange(3);">    <span class="boxtext"></span></div>
+            <div class="box" onclick="textchange(4);">       <span class="boxtext"></span></div>
+            <div class="box b-r" onclick="textchange(5);">    <span class="boxtext"></span></div>
+            <div class="box b-l b-b" onclick="textchange(6);"><span class="boxtext"></span></div>
+            <div class="box b-b" onclick="textchange(7);">    <span class="boxtext"></span></div>
+            <div class="box b-r b-b" onclick="textchange(8);"><span class="boxtext"></span></div>
+        </div>
+    </div>
+    <div class="reset"><button onclick="reset()">Reset</button></div>
+    <script src="game.js"></script>
+</body>
+</html>
